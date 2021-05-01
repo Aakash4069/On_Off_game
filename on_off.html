@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Document</title>
+        <style>
+            .chart {
+                /* overflow: hidden;
+                background-color: rgb(29, 36, 56);
+                width: 800px;
+                height: 350px;
+                position: absolute;
+                border: 1px solid black;
+                text-align: center; */
+                overflow: hidden;
+                background-color: rgb(29, 36, 56);
+                width: 800px;
+                height: 350px;
+                /* position: absolute; */
+                margin-left: auto;
+                margin-right: auto;
+                position: relative;
+            }
+            .bar-container {
+                float: left;
+    margin-right: 10px;
+    width: 18.72%;
+    height: 102%;
+                
+            }
+            .bar {
+                background-color: red;
+                position: absolute;
+                bottom: 0;
+                /* width: 50px; */
+                width: 20%
+            }
+            .linux {
+                background-color: green;
+            }
+            .macos {
+                background-color: blue
+            }
+        </style>
+    </head>
+    <body>
+
+
+        <div class="chart">
+            <div class="bar-container">
+                <div class="bar windows" style="height: 100%"></div>
+                <!-- <div class="bar linux" style="height: 40%"></div>
+                <div class="bar macos" style="height: 30%"></div> -->
+            </div>
+            <div class="bar-container">
+                <div class="bar linux" style="height: 100%"></div>
+                <!-- <div class="bar linux" style="height: 20%"></div>
+                <div class="bar macos" style="height: 30%"></div> -->
+            </div>
+            <div class="bar-container">
+                <div class="bar macos" style="height: 100%"></div>
+                <!-- <div class="bar linux" style="height: 20%"></div>
+                <div class="bar macos" style="height: 30%"></div> -->
+            </div>
+            <div class="bar-container">
+                <div class="bar linux" style="height: 100%"></div>
+                <!-- <div class="bar linux" style="height: 20%"></div>
+                <div class="bar macos" style="height: 30%"></div> -->
+            </div>
+            <div class="bar-container">
+                <div class="bar windows" style="height: 100%"></div>
+                <!-- <div class="bar linux" style="height: 20%"></div>
+                <div class="bar macos" style="height: 30%"></div> -->
+            </div>   
+        </div>
+
+    </body>
+</html>
+
+
