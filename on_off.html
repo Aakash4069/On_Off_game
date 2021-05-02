@@ -111,7 +111,7 @@
         </div>
         <div class="button">
             <button class="button1 Start" onclick="start()">Start</button>
-            <button class="button2 End" onclick="end()">End</button>
+            <button class="button2 Stop" onclick="stop()">Stop</button>
 
 
         </div>
@@ -136,7 +136,7 @@
                     count+=1;
                     console.log("desub");
                     
-                    if(count <= 40){
+                    if(count < 40){
 
                         clearInterval(dinti);
 
@@ -175,7 +175,7 @@
                                 count+=1;
                                 console.log("insub");
                                 
-                                if(count >= 40){
+                                if(count > 40){
                                     clearInterval(iinti);
                                 }           
 
@@ -188,19 +188,13 @@
             }
 
             
-            function end(){
+            function stop(){
                 clearInterval(decinti);
                 clearInterval(incinti);
                 clearInterval(dinti);
                 clearInterval(iinti);
                 clearTimeout(timeout);
-                let bars = document.querySelectorAll(".bar");
-
-                for(let i=0; i<bars.length;i++){
-
-                    bars[i].style.height="100%";
-
-                }
+                
 
             }
 
